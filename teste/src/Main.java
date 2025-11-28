@@ -65,6 +65,7 @@ public class Main {
                         sc.nextLine();
                         int id_devolver = sc.nextInt();
                         System.out.println("Digite o título do livro: ");
+                        sc.nextLine();
                         String titulo_devolver = sc.nextLine();
                         biblioteca.devolverLivro(id_devolver, titulo_devolver);
                         break;
@@ -73,13 +74,14 @@ public class Main {
                         sc.nextLine();
                         int id_pegar = sc.nextInt();
                         System.out.println("Digite o título do livro: ");
+                        sc.nextLine();
                         String titulo_pegar = sc.nextLine();
                         biblioteca.emprestarLivro(id_pegar, titulo_pegar);
                         break;
                     case 9:
                         break menu;
                     default:
-                        System.out.println("Digita uma opção possível neh fofa");
+                        System.out.println("Digita uma opção possível.");
                         break;
                 }
             } catch(InputMismatchException e){
