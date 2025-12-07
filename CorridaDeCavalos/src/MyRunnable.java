@@ -19,7 +19,7 @@ public class MyRunnable implements Runnable{
     public void run() {        
         while(!corridaTerminou && blocos<50){
             try {
-                Thread.sleep(10);
+                Thread.sleep(100);
                 if(corridaTerminou){return;}
                 avancar();
                 if(corridaTerminou){return;}
